@@ -1,0 +1,46 @@
+ .outer {
+    display: flex;   
+}
+
+header > div {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18pt;
+    text-align: center;
+    background-color: yellow;
+    height: 290pt;
+    width: 480pt;
+    margin: 0px 80px;
+    border: 2pt dashed blue;
+    overflow: auto;
+}
+footer > div{
+    display: flex;
+    text-align: center;
+    background-color: yellow;
+    height: 250pt;
+    width: 480pt;
+    margin: 0px 100px;
+    border: 2pt dashed blue;
+    overflow: auto;
+}
+
+table{
+    display: inline;
+}
+.list_orders{
+    overflow: auto;
+}
+.add-aorder{
+    flex-direction: row;
+}
+.out_input{
+    /* display: inline-block; */
+    -ms-flex-line-pack: center
+}
+.send{
+    width: 100px;
+    height: 50px;
+}
+.select{
+    display: inline-block;
+}

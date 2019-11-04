@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travel</title>
+    <link rel="stylesheet" type="text/css" href="travel.css">
+</head>
+
+<body>
+    <header class="outer">
+        <div class="destination" id="destination">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>travel code</th>
+                        <th>travel name</th>
+                        <th>price</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+
+        </div>
+        <div class="add-aorder" id="add-aorder">
+            <div class="out_input"><label id="input_name" for="name">Name</label><input id="name" /></div><br>
+            <div class="out_input"><label id="input_zeut" for="zeut">Zeut</label><input id="zeut" /></div><br>
+            <div class="out_input"><label id="input_travel_id" for="travel_id">travel Id</label><input id="travel_id" /></div><br>
+            <div class="out_input"><label id="input_passengers" for="passengers">Passengers</label><input id="passengers" /></div><br>
+            <button id="send" class="send" onclick="send()">send</button>
+        </div>
+    </header>
+    <br><br><br><br><br>
+    <footer class="outer">
+        <div class="list-orders" id="list-orders">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th >Name</th>
+                        <th>Zeut</th>
+                        <th>travel name</th>
+                        <th>Pasengers</th>
+                        <th>Total-Price</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div class="select">
+            <br>
+            <div><label for="select_name">Your Name</label>
+                <input type="text" id="select_name">
+            <button id="find" onclick="find()" >Find</button>
+            </div>
+            <br>
+                <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Zeut</th>
+                                <th>Name</th>
+                                <th>Id-Travel</th>
+                                <th>Destination</th>
+                                <th>Passengers</th>
+                                <th>Total-Price</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+        </div>
+    </footer>
+    <script src="travel.js"></script>
+</body>
+
+</html>
