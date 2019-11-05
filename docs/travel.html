@@ -30,7 +30,7 @@
             <div class="out_input"><label id="input_zeut" for="zeut">Zeut</label><input id="zeut" /></div><br>
             <div class="out_input"><label id="input_travel_id" for="travel_id">travel Id</label><input id="travel_id" /></div><br>
             <div class="out_input"><label id="input_passengers" for="passengers">Passengers</label><input id="passengers" /></div><br>
-            <button id="send" class="send" onclick="send()">send</button>
+            <button type="button" id="send" class="send" onclick="send()">send</button>
         </div>
     </header>
     <br><br><br><br><br>
@@ -40,7 +40,7 @@
                 <thead>
                     <tr>
                         <th>Id</th>
-                        <th >Name</th>
+                        <th>Name</th>
                         <th>Zeut</th>
                         <th>travel name</th>
                         <th>Pasengers</th>
@@ -52,25 +52,68 @@
         </div>
         <div class="select">
             <br>
+            <div>
+                <h2>search by name</h2>
+            </div>
+
             <div><label for="select_name">Your Name</label>
                 <input type="text" id="select_name">
-            <button id="find" onclick="find()" >Find</button>
+                <button type="button" id="find" onclick="find()">Find</button>
             </div>
             <br>
-                <table border="1">
-                        <thead>
-                            <tr>
-                                <th>Zeut</th>
-                                <th>Name</th>
-                                <th>Id-Travel</th>
-                                <th>Destination</th>
-                                <th>Passengers</th>
-                                <th>Total-Price</th>
-                            </tr>
-                        </thead>
-                        <tbody></tbody>
-                    </table>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Zeut</th>
+                        <th>Name</th>
+                        <th>Id-Travel</th>
+                        <th>Destination</th>
+                        <th>Passengers</th>
+                        <th>Total-Price</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div class="IL">
+                <div class="IL">
+                    <h2>sum price:</h2>
+                </div>
+                <div id="sum_price_name"></div>
+            </div>
         </div>
+        <div class="select_destination">
+            <br>
+            <div>
+                <h2>search by destination</h2>
+            </div>
+
+            <div><label for="select_name">search destination</label>
+                <input type="text" id="select_destination">
+                <button type="button" id="find" onclick="find_destination()">Find</button>
+                <br><br><br>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Zeut</th>
+                            <th>Name</th>
+                            <th>Id-Travel</th>
+                            <th>Destination</th>
+                            <th>Passengers</th>
+                            <th>Total-Price</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <div class="IL">
+                    <div class="IL">
+                        <h2>sum price:</h2>
+                    </div>
+                    <div id="sum_price_Destination"></div>
+                </div>
+            </div>
+
+        </div>
+
     </footer>
     <script src="travel.js"></script>
 </body>

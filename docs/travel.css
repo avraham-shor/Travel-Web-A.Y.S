@@ -19,13 +19,14 @@ footer > div{
     background-color: yellow;
     height: 250pt;
     width: 480pt;
-    margin: 0px 100px;
+    margin: 0px 15px;
     border: 2pt dashed blue;
     overflow: auto;
 }
 
 table{
     display: inline;
+ 
 }
 .list_orders{
     overflow: auto;
@@ -34,7 +35,6 @@ table{
     flex-direction: row;
 }
 .out_input{
-    /* display: inline-block; */
     -ms-flex-line-pack: center
 }
 .send{
@@ -43,4 +43,13 @@ table{
 }
 .select{
     display: inline-block;
+}
+.select_destination{
+    display: inline-block;
+}
+.IL{
+    display: inline;
+}
+body{
+    background-color: blanchedalmond;
 }
